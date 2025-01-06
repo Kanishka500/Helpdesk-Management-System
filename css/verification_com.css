@@ -1,0 +1,206 @@
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.2); /* Semi-transparent black */
+  z-index: 999; /* Ensure it sits below the popup */
+  display: none; /* Initially hidden */
+}
+
+.page_title {
+  padding: 20px;
+  background: #f3f7f4;
+  color: black;
+  font-size: 30px;
+  border: 1px solid #c4c4c4;
+  margin-bottom: 10px;
+}
+
+.page_name {
+  font-size: 20px;
+}
+
+p {
+  font-size: 30px;
+}
+
+.page_subtitle {
+  padding: 10px 10px 10px 20px;
+  background: #f3f7f4;
+  color: black;
+  border: 1px solid #c4c4c4;
+}
+
+.title {
+  font-size: 15px;
+}
+
+.contactForm {
+  position: relative;
+  background: #ffffff;
+  padding: 10px;
+  display: inline-block;
+  border-radius: 10px;
+}
+
+.form-card {
+  background-color: #f2f2f2;
+  width: 100%;
+  padding: 20px;
+  border: #333 solid 1px;
+  border-radius: 10px;
+}
+
+input[type="text"],
+select,
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+}
+
+label {
+  padding: 12px 12px 12px 0;
+}
+
+.content {
+  padding: 10px 10px 10px 20px;
+  background: #fff;
+  color: black;
+  border: 1px solid #c4c4c4;
+  border-radius: 0 0 10px 10px;
+}
+
+h4 {
+  margin-top: 20px;
+}
+
+button[type="cancel"] {
+  font-size: 15px;
+  background-color: #a90329;
+  color: white;
+  margin-top: 50px;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  float: right;
+  text-decoration: none;
+  font-weight: bold;
+  border: 1px solid #900323;
+}
+
+button[type="cancel"]:hover {
+  background-color: #a9032abd;
+}
+
+button[type="submit"] {
+  font-size: 15px;
+  background-color: #24a0ed;
+  color: white;
+  margin-top: 50px;
+  margin-left: 10px;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  float: right;
+  text-decoration: none;
+  font-weight: bold;
+  border: 1px solid #45a7ba;
+}
+
+button[type="submit"]:hover {
+  background-color: #99cbfc;
+}
+
+.col-25 {
+  float: left;
+  width: 20%;
+  margin-top: 10px;
+  text-align: left;
+  margin-left: 50px;
+}
+
+.col-75 {
+  float: left;
+  width: 70%;
+  margin-top: 6px;
+}
+
+/*----------------------- Message Box -------------------------------*/
+.messageBox {
+  position: relative;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 1001; /* Higher z-index to ensure it sits above the overlay */
+}
+.popup-messageBox {
+  width: 400px;
+  background: #fff;
+  border-radius: 6px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0.1);
+  text-align: center;
+  padding: 0 30px 30px;
+  color: #333;
+  visibility: hidden;
+  transition: transform 0.4s, top 0.4s;
+  z-index: 1001;
+}
+
+.open-messageBox {
+  display: block;
+  visibility: visible;
+  top: 50%;
+  transform: translate(-50%, -50%) scale(1);
+  z-index: 1001; /* Higher than the overlay */
+}
+
+.popup-messageBox img {
+  width: 100px;
+  margin-top: -50px;
+  border-radius: 50%;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.popup-messageBox h2 {
+  font-size: 38px;
+  font-weight: 500;
+  margin: 30px 0 10px;
+}
+
+.popup-messageBox p {
+  font-size: medium;
+}
+
+.popup-messageBox button {
+  width: 100%;
+  margin-top: 50px;
+  padding: 10px 0;
+  background: #6fd649;
+  color: #fff;
+  border: 0;
+  outline: none;
+  font-size: 18px;
+  border-radius: 4px;
+  cursor: pointer;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .col-25,
+  .col-75,
+  input[type="submit"] {
+    width: 100%;
+    margin-top: 0;
+  }
+}

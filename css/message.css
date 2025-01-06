@@ -1,0 +1,204 @@
+.container_message {
+  border: 1px solid #dedede;
+  background-color: #f1f1f1;
+  border-radius: 2px;
+  padding: 10px;
+  margin: 10px 0;
+  word-break: break-all;
+}
+.container_message::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.imgmeleft {
+  float: left;
+  max-width: 60px;
+  width: 100%;
+  margin-right: 20px;
+  border-radius: 50%;
+}
+.time-right {
+  float: right;
+  color: #555555;
+  font-size: 12px;
+  font-weight: bold;
+}
+.more:link,
+.more:visited {
+  color: #524125;
+  font-size: 12px;
+  font-weight: bold;
+  text-decoration: none;
+}
+.more:hover,
+.more:active {
+  color: #9e9d9d;
+  transition: 0.5s;
+}
+.chat_m2 {
+  font-size: 12px;
+  color: #6b5530;
+  font-weight: bold;
+}
+.chat_m3 {
+  font-size: 12px;
+  color: #524125;
+}
+.buttcompose {
+  background-color: #df5050;
+  border: 1px solid #df5050;
+  color: #fff;
+  padding: 11px 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  transition-duration: 0.5s;
+  cursor: pointer;
+}
+.buttcompose:hover {
+  background-color: #ca2c2d;
+  color: white;
+}
+
+.buttmess {
+  background-color: white;
+  border: 1px solid #555555;
+  color: #524125;
+  padding: 2px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 11px;
+  transition-duration: 0.5s;
+  cursor: pointer;
+}
+.buttmess:hover {
+  background-color: #555555;
+  color: white;
+}
+/* --------------------------pagination----------------------------  */
+.pagination a {
+  color: #0088cc;
+  display: inline-block;
+  margin-left: 5px;
+  padding: 8px 16px;
+  font-size: 14px;
+  border: 1px solid #ddd;
+  text-decoration: none;
+  background-color: #fff;
+  transition: background-color 0.5s;
+}
+.pagination a.active {
+  background-color: #50a5f9;
+  color: #fff;
+  transition: background-color 0.5s;
+  width: auto;
+  display: inline;
+}
+.pagination a:hover:not(.active) {
+  background-color: #eee;
+  color: #00558d;
+  transition: background-color 0.5s;
+}
+/* --------------------------popup---------------------------  */
+/* The popup chat - hidden by default */
+.chat-popup {
+  display: none;
+  position: fixed;
+  bottom: 45px;
+  right: 15px;
+  border: 1px solid #b3c7db;
+  z-index: 999;
+  background-color: #f1f1f1;
+  padding: 10px;
+  min-width: 300px;
+  height: auto;
+}
+
+/* Add styles to the form container */
+
+.form-container textarea {
+  width: calc(100% - 12px);
+  padding: 5px;
+  background: #fff;
+  resize: none;
+  min-height: 150px;
+  border: 1px solid #ddd;
+}
+.forminpout {
+  width: 100%;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 2px;
+  box-sizing: border-box;
+}
+/* When the textarea gets focus, do something */
+.form-container textarea:focus {
+  outline: none;
+}
+/* Set a style for the submit/send button */
+.form-container .btn {
+  color: #fff;
+  background-color: #e05d5d;
+  padding: 10px 20px;
+  border: 1px solid #9b3939;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom: 10px;
+  transition: background-color 0.5s;
+}
+/* Add some hover effects to buttons */
+.form-container .btn:hover {
+  background-color: #c54242;
+  color: #fff;
+}
+
+/* Add a red background color to the cancel button */
+
+.close {
+  border: 1px solid #ddd;
+  background-color: #fff;
+  font-size: 14px;
+  color: #524125;
+  padding: 8px 8px 8px 12px;
+  cursor: pointer;
+  text-decoration: none;
+  display: block;
+  width: auto;
+}
+.close:hover {
+  background-color: #eee;
+  color: #2b2213;
+  transition: background-color 0.5s;
+}
+/* --------------------------search box---------------------------  */
+#searchbox {
+  list-style: none;
+  margin: 0;
+  padding: 2px;
+  width: calc(100% - 4px);
+  border: 1px solid #ccc;
+  background-color: #fff;
+}
+#searchbox li {
+  display: block;
+}
+#searchbox li a {
+  display: block;
+  height: 14px;
+  padding: 6px 5px;
+}
+#searchbox li a:hover {
+  cursor: pointer;
+  background-color: #eee;
+  transition-duration: 0.5s;
+}
+#search_display {
+  position: absolute;
+  display: inline-block;
+  z-index: 1;
+  width: calc(100% - 22px);
+}

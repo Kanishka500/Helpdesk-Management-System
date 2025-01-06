@@ -1,0 +1,178 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+*:focus {
+  outline: 0px transparent !important;
+}
+@font-face {
+  font-family: "fontAwesome";
+  src: url("../fontawesome/webfonts/fa-regular-400.eot"); /* IE9 Compat Modes */
+  src: url("../fontawesome/webfonts/fa-regular-400.eot?#iefix")
+      format("embedded-opentype"),
+    /* IE6-IE8 */ url("../fontawesome/webfonts/fa-regular-400.woff2")
+      format("woff2"),
+    /* Super Modern Browsers */
+      url("../fontawesome/webfonts/fa-regular-400.woff") format("woff"),
+    /* Pretty Modern Browsers */
+      url("../fontawesome/webfonts/fa-regular-400.ttf") format("truetype"); /* Safari, Android, iOS */
+  /*url('fontawesome/webfonts/webfont.svg#svgFontName') format('svg');*/ /* Legacy iOS */
+}
+html,
+body {
+  font-family: "fontAwesome", sans-serif;
+  height: 100%;
+  background: #e8ebf0;
+}
+.container_wapper {
+  width: 100%;
+  height: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.container_wapper > .container {
+  max-width: 500px;
+  height: auto;
+  border: 1px solid #b3c7db;
+  flex: 1;
+  background-color: #fff; /*#f0f1f1*/
+  display: flex;
+  flex-wrap: wrap;
+}
+.container > .head {
+  width: 100%;
+  height: auto;
+  margin: 10px;
+  border-bottom: 1px solid #000;
+  text-align: center;
+}
+.container > .section1 {
+  flex: 1 0 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+  padding-bottom: 30px;
+}
+.container > .section2 {
+  flex: 4 0 200px;
+  margin: 10px;
+}
+
+.from_div {
+  padding: 5px;
+  height: auto;
+}
+.message_div {
+  padding: 5px;
+  height: auto;
+}
+.submit_div {
+  height: auto;
+  padding: 5px;
+}
+#image1 {
+  max-width: 150px;
+  flex: 1;
+}
+input[type="text"],
+input[type="password"] {
+  width: 100%;
+  padding: 10px 10px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #b3c7db;
+  box-sizing: border-box;
+}
+.button {
+  background: #0f5078;
+  padding: 0px 24px;
+  display: block;
+  width: 100%;
+  height: 40px;
+  margin-top: 10px;
+  padding-bottom: 2px;
+  color: #f3efef;
+  border-radius: 2px;
+  border: 1px solid #0a3a58;
+  font-size: 15px;
+  font-weight: bold;
+  text-decoration: none;
+  -webkit-transition: background 0.5s linear 0s, color 0.5s linear 0s;
+  -moz-transition: background 0.5s linear 0s, color 0.5s linear 0s;
+  -ms-transition: background 0.5s linear 0s, color 0.5s linear 0s;
+  -o-transition: background 0.5s linear 0s, color 0.5s linear 0s;
+  transition: background 0.5s linear 0s, color 0.5s linear 0s;
+}
+.button:hover {
+  background: #357ab5;
+  color: #fff;
+  border: 1px solid #0e4f77;
+}
+
+span.psw {
+  float: right;
+  padding-top: 16px;
+  font-family: "Font Awesome", sans-serif;
+  font-size: 14px;
+}
+
+#login_txt1 {
+  color: #283a4b;
+  font-size: 13px;
+  font-weight: bold;
+}
+#message_txt1 {
+  color: #8cc3fa;
+  font-size: 13px;
+  padding: 10px;
+  font-weight: normal;
+}
+#head_text1 {
+  color: #002d42;
+  font-size: 20px;
+  padding-left: 5px;
+  font-weight: bold;
+}
+#head_text2 {
+  color: #002d42;
+  padding-left: 5px;
+  font-size: 14px;
+  font-weight: bold;
+}
+#head_text3 {
+  color: #002d42;
+  padding-left: 5px;
+  font-size: 13px;
+  font-weight: normal;
+}
+
+#message {
+  font-size: 12px;
+  font-weight: bold;
+  color: #f55;
+}
+.read_more1:link {
+  text-decoration: none;
+  color: #005177;
+  font-weight: bold;
+  font-size: 12px;
+}
+.read_more1:visited {
+  text-decoration: none;
+  color: #005177;
+  font-weight: bold;
+  font-size: 12px;
+}
+.read_more1:hover {
+  text-decoration: none;
+  color: #8cc3fa;
+  font-weight: bold;
+  font-size: 12px;
+}
+.fa {
+  font-size: 16px;
+  padding-right: 5px;
+  color: #f3a2b5;
+}

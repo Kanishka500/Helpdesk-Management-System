@@ -1,0 +1,120 @@
+/*-------phone--------*/
+@media (max-width: 940px) {
+  .form_row >.form_colm3 {
+    flex-wrap: wrap;
+  }
+  .form_row >.form_colm3 >.inputbox:nth-child(2){
+    margin-right: 0;
+  }
+  .form_row >.form_colm3 >.inputbox:nth-child(3){
+    margin-top:5px;
+  }
+  .form_row >.form_colm3 >.inputbox:nth-child(4){
+    margin-right: 0;
+    margin-top:5px;
+  }
+  .form_row >.form_colm3 >.inputbox:nth-child(5){
+    margin-top:5px;
+  }
+  .form_row >.form_colm3 >.inputbox:nth-child(6){
+    margin-right: 0;
+    margin-top:5px;
+  }
+}
+@media (max-width: 640px) {
+  #top_barwapper {
+    flex-wrap: wrap;
+  }
+  #top_barwapper > :nth-child(3) {
+    border-left: none;
+    border-top: 0.0625em solid #f8f8f8;
+  }
+  #header_wapper {
+    flex-wrap: wrap-reverse;
+  }
+  #header_wapper > #logo {
+    flex: 1 1 100%;
+  }
+  #header_wapper > #infor {
+    flex: 1 1 100%;
+  }
+  #header_wapper > #logo {
+    padding-left: 0;
+  }
+  #logo > #logo_wapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .form_row {
+    flex-wrap: wrap;
+  }
+  .form_row >.form_colm2 {
+    margin-right:0;
+  }
+  .form_row >.form_colm2:nth-child(2) {
+    margin-top: 5px;
+  }
+  .form_row >.form_colm3 >.inputbox {
+    flex: 1 1 100%;
+    margin:0 0 0 0;
+  }
+  .form_row >.form_colm3 >.inputbox:nth-child(2){
+    margin-top:5px;
+  }
+  #logoimg {
+    padding-right: 0px;
+  }
+  #footer_wapper {
+    flex-wrap: wrap;
+  }
+}
+/*-------phone small--------*/
+@media (max-width: 480px) {
+  #top_barwapper > * {
+    flex: 1 1 100%;
+  }
+  #top_barwapper > :nth-child(2) {
+    border-left: none;
+    border-top: 0.0625em solid #f8f8f8;
+  }
+  #footer > #footer_wapper > * {
+    flex: 1 1 100%;
+  }
+  #footer_wapper > :nth-child(1) {
+    text-align: center;
+  }
+  #footer_wapper > :nth-child(2) {
+    border-top: 0.0625em solid #f8f8f8;
+    text-align: center;
+  }
+  .sidebar_btn {
+    display: none;
+  }
+  #content > #content_wapper {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .sidebar {
+    flex: 1 1 50%;
+    min-height: auto;
+    width: 100%;
+  }
+  .main_container {
+    flex: 1 1 50%;
+    margin-left: 0px;
+    min-height: none;
+    height: auto;
+  }
+  .sidebar .sidebar_menu .item {
+    width: 100%;
+  }
+  .collapse .main_container {
+    width: 100%;
+    margin-left: 0rem;
+  }
+  .collapse .sidebar a span {
+    display: contents;
+  }
+}

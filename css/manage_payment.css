@@ -1,0 +1,662 @@
+.page_title {
+  padding: 20px;
+  background: #F3F7F4;
+  color: black;
+  font-size: 30px;
+  border: 1px solid #C4C4C4;
+  margin-bottom: 10px;
+}
+
+.page_name {
+  font-size: 20px;
+}
+
+p {
+  font-size: 30px;
+}
+
+.page_subtitle {
+  padding: 10px 10px 10px 20px;
+  background: #F3F7F4;
+  color: black;
+  border: 1px solid #C4C4C4;
+}
+
+.title {
+  font-size: 15px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.row {
+  margin-left: -13px;
+}
+
+.well {
+  background-color: #fbfbfb;
+  border: 1px solid #ddd;
+  min-height: 80px;
+}
+
+.well-sm {
+  padding: 9px;
+  border-radius: 2px;
+}
+
+/* ----------------------content---------------------- */
+
+.content {
+  padding: 10px 10px 10px 20px;
+  background: #fff;
+  color: black;
+  border: 1px solid #C4C4C4;
+}
+
+/* -------------------search btn---------------------- */
+
+.txtbox {
+  margin: 10px;
+  float: left;
+  border-radius: 5px;
+}
+
+.search_btn {
+  color: #f5a48b;
+  display: inline-block;
+  padding: 8px 8px 8px 12px;
+  font-size: 13px;
+  border: 1px solid #ddd;
+  text-decoration: none;
+  background-color: #fff;
+  transition: background-color 0.5s;
+  cursor: pointer;
+  margin-left: 30px;
+}
+
+.search_btn:hover {
+  background-color: #eee;
+  color: #d3542d;
+}
+
+
+/* ---------------------table------------------- */
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  margin-left: -8px;
+}
+
+th,
+td {
+  text-align: left;
+  padding: 10px;
+  cursor: pointer;
+}
+
+td {
+  font-size: 15px;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2
+}
+
+tr:hover {
+  background-color: #30303045;
+  /* Changed to apply to the entire row */
+  color: #fff;
+}
+
+th {
+  background-color: #eee;
+  color: black;
+  text-align: center;
+  font-size: 13px;
+}
+
+#job td,
+#job th {
+  border: 1px solid #ddd;
+}
+
+.txt_t4 {
+  font-size: 14px;
+  margin-top: 5px;
+  font-weight: normal;
+  color: #524125;
+  word-break: break-all;
+}
+
+/* --------------------fetch data------------------------ */
+.form-group {
+  margin: 10px;
+  /* border: #612def solid 1px; */
+}
+
+.pro1 {
+  align-items: left;
+}
+
+/*---------------- Issue Fixing & Payment Status --------------------*/
+
+.comment {
+  margin-top: 2px;
+  font-size: 13px;
+  color: #818181;
+}
+
+.form-col5 {
+  margin: 10px;
+  background-color: #ddd;
+}
+
+.form {
+  margin-left: 10px;
+  /* border: black solid 1px; */
+}
+
+.col1 {
+  /* border: 1px solid red; */
+  width: 24%;
+  height: 60px;
+  float: left;
+  margin-left: 10px;
+  margin-top: 20px;
+}
+
+.col1 .label1 {
+  /* margin: 20px; */
+  margin-top: 30px;
+}
+
+.col3 {
+  width: 40%;
+  display: inline-block;
+  /* border: #612def solid 1px; */
+  margin: 10px;
+}
+
+.col4 {
+  width: 30%;
+  display: flex;
+  margin: 10px;
+}
+
+.col5 {
+  width: 31%;
+  height: 60px;
+  display: inline-block;
+  /* border: #612def solid 1px; */
+  margin: 10px 10px 10px 10px;
+}
+
+.col6 {
+  height: 40px;
+}
+
+.input {
+  width: 50%;
+  height: 30px;
+  margin: 5px;
+}
+
+/* ----------------- view button -----------------*/
+.view_btn {
+  width: auto;
+  text-decoration: none;
+  display: inline-block;
+  text-align: center;
+  vertical-align: middle;
+  font-size: 13px;
+  opacity: 1;
+  border: 1px solid #0088cc;
+  background-color: #50a5f9;
+  color: #fff;
+  padding: 8px 8px;
+  border-radius: 1px;
+  cursor: pointer;
+  transition: background-color 0.5s;
+}
+
+.view_btn:hover {
+  background: #99cbfc;
+}
+
+/* ----------------- verify button -----------------*/
+.verify {
+  width: auto;
+  text-decoration: none;
+  display: inline-block;
+  text-align: center;
+  vertical-align: middle;
+  font-size: 13px;
+  opacity: 1;
+  border: 1px solid #3a7432;
+  background-color: #5eb556;
+  color: #fff;
+  padding: 8px 8px;
+  border-radius: 1px;
+  cursor: pointer;
+  transition: background-color 0.5s;
+}
+
+.verify:hover {
+  background: #3a7432;
+}
+
+/* ----------------- submit button -----------------*/
+.submit_btn {
+  width: auto;
+  text-decoration: none;
+  display: inline-block;
+  text-align: center;
+  vertical-align: middle;
+  font-size: 13px;
+  opacity: 1;
+  border: 1px solid #cc8914;
+  background-color: #efab4a;
+  color: #fff;
+  padding: 8px 8px;
+  border-radius: 1px;
+  cursor: pointer;
+  transition: background-color 0.5s;
+}
+
+.submit_btn:hover {
+  background: #cc8914;
+}
+
+/* ----------------- view button -----------------*/
+.position {
+  width: auto;
+  text-decoration: none;
+  display: inline-block;
+  font-weight: normal;
+  text-align: center;
+  vertical-align: middle;
+  font-size: 13px;
+  opacity: 1;
+  border: 1px solid #8b080d;
+  background-color: #dc524f;
+  color: #fff;
+  padding: 8px 8px;
+  border-radius: 1px;
+  cursor: pointer;
+  transition: background-color 0.5s;
+}
+
+.position:hover {
+  background: #8b080d;
+}
+
+/* ------------------confirm btn------------------------- */
+.verify_btn {
+  width: auto;
+  text-decoration: none;
+  display: inline-block;
+  text-align: center;
+  vertical-align: middle;
+  font-size: 13px;
+  opacity: 1;
+  border: 1px solid #3a7432;
+  background-color: #5eb556;
+  color: #fff;
+  padding: 8px 8px;
+  border-radius: 1px;
+  cursor: pointer;
+  transition: background-color 0.5s;
+}
+
+.verify_btn:hover {
+  background: #3a7432;
+}
+
+.finance_btn {
+  width: auto;
+  text-decoration: none;
+  display: inline-block;
+  text-align: center;
+  vertical-align: middle;
+  font-size: 13px;
+  opacity: 1;
+  border: 1px solid #cc8914;
+  background-color: #efab4a;
+  color: #fff;
+  padding: 8px 8px;
+  border-radius: 1px;
+  cursor: pointer;
+  transition: background-color 0.5s;
+}
+
+.finance_btn:hover {
+  background: #cc8914;
+}
+
+.approve_btn {
+  width: auto;
+  text-decoration: none;
+  display: inline-block;
+  text-align: center;
+  vertical-align: middle;
+  font-size: 13px;
+  opacity: 1;
+  border: 1px solid #8b080d;
+  background-color: #dc524f;
+  color: #fff;
+  padding: 8px 8px;
+  border-radius: 1px;
+  cursor: pointer;
+  transition: background-color 0.5s;
+}
+
+.approve_btn:hover {
+  background: #a9032abd;
+}
+
+.finish_btn {
+  width: auto;
+  text-decoration: none;
+  display: inline-block;
+  text-align: center;
+  vertical-align: middle;
+  font-size: 13px;
+  opacity: 1;
+  border: 1px solid #0088cc;
+  background-color: #50a5f9;
+  color: #fff;
+  padding: 8px 8px;
+  border-radius: 1px;
+  cursor: pointer;
+  transition: background-color 0.5s;
+}
+
+.finish_btn:hover {
+  background: #99cbfc;
+}
+
+
+/* --------------------------popup----------------------------  */
+.cancel_container {
+  display: flex;
+  background-color: #515050;
+  padding: 8px;
+}
+
+#infor {
+  flex: 1;
+}
+
+#cancel {
+  flex: 1;
+}
+
+.cancelbtn>.fa-times {
+  font-size: 16px;
+}
+
+.cancelbtn {
+  border: 2px solid #fff;
+  color: #fff;
+  background: none;
+  padding: 3px 3px 3px 8px;
+  cursor: pointer;
+  text-decoration: none;
+  display: block;
+  width: auto;
+  transition: background-color 0.5s;
+  border-radius: 50%;
+}
+
+.cancelbtn:hover {
+  color: #ddd;
+  border: 2px solid #ddd;
+}
+
+.popup_head {
+  text-align: center;
+  position: relative;
+  padding: 10px;
+  background-color: #f4f4f4;
+}
+
+.popup_container {
+  padding: 0px;
+  height: auto;
+}
+
+.popup_footer {
+  padding: 10px;
+  min-height: 40px;
+  background-color: #fefefe;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.page_heding2 {
+  font-size: 16px;
+  color: #515050;
+}
+
+.page_heding4 {
+  font-size: 14px;
+  color: #6e6d6d;
+}
+
+img.profileMain {
+  width: auto;
+  max-height: 100px;
+  border: 4px solid #ddd;
+  border-radius: 50%;
+  padding: 2px;
+}
+
+.pro1_warp {
+  border-bottom: 1px solid #fff;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.proimage_warp {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.proimage {
+  flex: 1 1 100px;
+  height: auto;
+  padding: 8px 5px;
+  background-color: #fff;
+}
+
+.btn_table {
+  width: 100%;
+  height: 100%;
+}
+
+.btn_table tr td {
+  vertical-align: bottom;
+}
+
+.pro1 {
+  height: auto;
+  padding: 8px 5px;
+  background-color: #f1f1f1;
+}
+
+.pro1:nth-child(1) {
+  flex: 1 1 100px;
+}
+
+.pro1:nth-child(2) {
+  flex: 3 1 100px;
+}
+
+.pro1:nth-child(3) {
+  flex: 2 1 100px;
+}
+
+.pro1:nth-child(odd) {
+  background-color: #dedede;
+}
+
+.infor_t2 {
+  font-size: 14px;
+  color: #524125;
+}
+
+.infor_t3 {
+  font-size: 14px;
+  color: #524125;
+  word-break: break-all;
+}
+
+.infor_t4 {
+  font-size: 13px;
+  font-weight: bold;
+  color: #515050;
+}
+
+.form_input {
+  width: 100%;
+  padding: 5px;
+  border-radius: 1px;
+  border: 1px solid #b3c7db;
+  box-sizing: border-box;
+  align-self: start;
+}
+
+.form_radio {
+  font-size: 14px;
+  padding-left: 5px;
+  color: #524125;
+  word-break: break-all;
+}
+
+.uploadimage {
+  display: inline-block;
+  border: 1px solid #e7e7e7;
+  background-color: white;
+  color: rgb(219, 53, 53);
+  padding: 10px 10px;
+  font-size: 13px;
+  cursor: pointer;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.uploadimage:hover {
+  background: #e7e7e7;
+  transition: background-color 0.5s;
+}
+
+/* ---------------------------------------------------------  */
+.txt_t4 {
+  font-size: 14px;
+  margin-top: 5px;
+  font-weight: normal;
+  color: #524125;
+  word-break: break-all;
+}
+
+.search_mess {
+  font-size: 14px;
+  font-weight: normal;
+  color: #e95e46;
+  word-break: break-all;
+}
+
+.error {
+  font-size: 13px;
+  font-weight: normal;
+  color: #e95e46;
+  word-break: break-all;
+}
+
+.edit_mess {
+  font-size: 14px;
+  font-weight: normal;
+  color: #0fa7e4;
+  word-break: break-all;
+}
+
+.error_mess {
+  font-size: 14px;
+  font-weight: normal;
+  color: #e95e46;
+  word-break: break-all;
+}
+
+.verify_mess {
+  font-size: 14px;
+  font-weight: normal;
+  color: #3a7432;
+  word-break: break-all;
+}
+
+/* ---------------The Modal (background)-------------------- */
+.modal {
+  display: none;
+  /* Hidden by default */
+  position: fixed;
+  /* Stay in place */
+  z-index: 1;
+  /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%;
+  /* Full width */
+  height: 100%;
+  /* Full height */
+  overflow: auto;
+  /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0);
+  /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4);
+  /* Black w/ opacity */
+  padding-top: 60px;
+}
+
+/* -------------------Modal Content/Box-------------------- */
+.modal_content {
+  background-color: #fefefe;
+  padding: 0px;
+  margin: 2% auto 15% auto;
+  /* 5% from the top, 15% from the bottom and centered */
+  /* border: 1px solid #797878; */
+  width: 50%;
+  /* Could be more or less, depending on screen size */
+}
+
+/*---------------------- Add Zoom Animation -------------------*/
+.animate {
+  -webkit-animation: animatezoom 0.6s;
+  animation: animatezoom 0.6s;
+}
+
+@-webkit-keyframes animatezoom {
+  from {
+    -webkit-transform: scale(0);
+  }
+
+  to {
+    -webkit-transform: scale(1);
+  }
+}
+
+@keyframes animatezoom {
+  from {
+    transform: scale(0);
+  }
+
+  to {
+    transform: scale(1);
+  }
+}
+
+/* --------------------------popup----------------------------  */

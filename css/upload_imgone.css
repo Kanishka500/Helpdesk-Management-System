@@ -1,0 +1,333 @@
+.btnimg {
+width: auto;
+text-decoration: none;
+display: inline-block;
+font-weight: normal;
+text-align: center;
+vertical-align: middle;
+opacity: 1;
+cursor: pointer;
+transition: background-color 0.5s;
+border: 1px solid #e7e7e7;
+background-color: white;
+color: black;
+padding: 8px 20px;
+font-size: 13px;
+}
+.btnimg:hover {
+background: #e7e7e7;
+}
+input[type="file"] {
+  display: none;
+}
+#input {
+  max-height: 50px;
+  max-width: 100px;
+  border: 1px solid #e7e7e7;
+  background-color: white;
+  display: block;
+  color: black;
+  padding: 8px;
+  font-size: 13px;
+  cursor: pointer;
+  color: black;
+  transition: background-color 0.5s;
+}
+#input:hover {
+  background: #e7e7e7;
+}
+.upload {
+text-decoration: none;
+display: inline-block;
+font-weight: normal;
+text-align: center;
+vertical-align: middle;
+font-size: 15px;
+opacity: 1;
+border: 1px solid #aa3333;
+background-color: #d15f5f;
+color: #fff;
+padding: 8px 20px;
+cursor: pointer;
+border-radius:3px;
+transition: background-color 0.5s;
+}
+.upload:hover {
+background: #ca2c2d;
+}
+.popup_warp {
+padding: 0px;
+height: auto;
+}
+.cancel_container {
+display: flex;
+background-color: #515050;
+padding:8px;
+}
+#infor {
+flex: 1;
+}
+#cancel {
+flex: 1;
+}
+.cancelbtn > .fa-times {
+font-size: 16px;
+}
+.popup_head {
+text-align: center;
+padding: 10px;
+background-color: #dedede;
+} 
+.popup_body {
+text-align: center;
+padding: 10px;
+min-height:250px;
+background-color: #fefefe;
+} 
+#form{
+display: flex;
+padding:8px;
+background-color: #f4f4f4;
+border: #dedede solid 1px;
+border-bottom: none;
+} 
+#insert{
+flex: 4;
+} 
+#crop{
+flex: 1;
+} 
+#upload{
+display: flex;
+padding: 5px;
+background-color: #f4f4f4;
+border: #dedede solid 1px;
+display: none;  
+}
+#upl{
+flex: 4;
+} 
+#rel{
+flex: 1;
+} 
+#canvas_crop{
+display: flex;
+width: 100%;
+border: #dedede solid 1px; 
+box-sizing: border-box;  
+} 
+#result{
+flex: 1 0 350px;
+}
+.popup_footer {
+padding: 10px;
+background-color: #dedede;
+}
+.page_heding2 {
+font-size: 16px;
+color: #515050;
+}
+.page_heding4 {
+font-size: 14px;
+color: #6e6d6d;
+}
+.cancelbtn {
+border: 2px solid #fff;
+color: #fff;
+background: none;
+padding: 3px 3px 3px 8px;
+cursor: pointer;
+text-decoration: none;
+display: block;
+width: auto;
+transition: background-color 0.5s;
+border-radius: 50%;
+}
+.cancelbtn:hover {
+color: #ddd;
+border: 2px solid #ddd;
+}
+.fa-chevron-right {
+font-size: 30px;
+color: #f3a2b5;
+}
+.fa-folder-open {
+font-size: 15px;
+color: #f3a2b5;
+}
+.fa-crop {
+font-size: 15px;
+color: #f3a2b5;
+}
+.fa-tags {
+font-size: 15px;
+color: #f3a2b5;
+}
+.fa-undo {
+font-size: 15px;
+color: #f3a2b5;
+}
+.fa,
+.far,
+.fas {
+  font-size: 0.875rem;
+  padding-right: 0.3125em;
+}
+#imgup{
+  width:100%;
+  padding: 10px 0 10px 0;
+  box-sizing: border-box;
+  display: flex;
+}
+#imgupl{
+  flex: 1 1 350px;
+  margin-right:5%;
+  padding:10px;
+  border:1px solid #ddd;
+  border-radius:1%;
+}
+#imgupl > div{
+  float: left;
+  width:auto;
+  padding: 5px;
+  height:auto;
+  box-sizing: border-box;
+}
+#imgupl > div:nth-child(1){
+  width:100%;
+  height:auto;
+  border-bottom: 1px solid #ddd;
+}
+#imgupl > #messdiv{
+  flex:2;
+}
+#imgdef{
+  flex: 1 1 350px;
+  display: flex;
+  padding:10px;
+  flex-wrap: wrap;
+  border:1px solid #ddd;
+  border-radius:1%;
+}
+#imgdef > div{
+  flex: 1;
+  box-sizing: border-box;
+  height:auto;
+  padding: 5px;
+}
+#imgdef > div:nth-child(1){
+  flex: 1 1 100%;
+  border-bottom: 1px solid #ddd;
+}
+.infor_t2 {
+  font-size: 14px;
+  color: #524125;
+}
+.imgcrop{
+  width: auto;
+  max-height: 100px;
+  border:2px solid #ddd;
+  border-radius:2%;
+  padding: 5px;
+  margin-right: 10px;
+}
+.messadd {
+  color: #f3a0a3;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.imgcancel{
+  margin-top: 5px;
+  color: #f5a48b;
+  display: inline-block;
+  padding: 8px 8px 8px 8px;
+  font-size: 13px;
+  border: 1px solid #ddd;
+  text-decoration: none;
+  background-color: #fff;
+  transition: background-color 0.5s;
+  cursor: pointer;
+}
+.imgcancel:hover {
+  background-color: #eee;
+  color: #d3542d;
+}
+.name_txt {
+  font-size: 13px;
+  font-weight: bold;
+  color: #665842;
+  word-break: break-all;
+}
+/* ---------------The Modal (background)-------------------- */
+.modal {
+display: none;
+/* Hidden by default */
+position: fixed;
+/* Stay in place */
+z-index: 1;
+/* Sit on top */
+left: 0;
+top: 0;
+width: 100%;
+/* Full width */
+height: 100%;
+/* Full height */
+overflow: auto;
+/* Enable scroll if needed */
+background-color: rgb(0, 0, 0);
+/* Fallback color */
+background-color: rgba(0, 0, 0, 0.4);
+/* Black w/ opacity */
+padding-top: 60px;
+}
+/* -------------------Modal Content/Box-------------------- */
+.modal_content {
+background-color: #fefefe;
+padding:0px;
+margin: 2% auto 15% auto;
+/* 5% from the top, 15% from the bottom and centered */
+/* border: 1px solid #797878; */
+width: 50%;
+/* Could be more or less, depending on screen size */
+}
+
+/*---------------------- Add Zoom Animation -------------------*/
+.animate {
+-webkit-animation: animatezoom 0.6s;
+animation: animatezoom 0.6s;
+}
+@-webkit-keyframes animatezoom {
+from {
+-webkit-transform: scale(0);
+}
+
+to {
+-webkit-transform: scale(1);
+}
+}
+
+@keyframes animatezoom {
+from {
+transform: scale(0);
+}
+
+to {
+transform: scale(1);
+}
+}
+/* --------------------------popup----------------------------  */
+@media (max-width: 640px) {
+  #imgup{
+    flex-wrap: wrap;
+  }
+  #imgupl{
+    margin-right:0px;
+  }
+  .modal_content {
+    width:90%;
+    }
+    #form{
+      flex-wrap: wrap;
+      } 
+}

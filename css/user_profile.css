@@ -1,0 +1,126 @@
+#heding_section {
+  height: auto;
+  width: 100%;
+}
+#body_section {
+  height: auto;
+  padding: 10px;
+  display: flex;
+  width: calc(100% -22px);
+  background-color: #fff;
+  border: #b3c7db solid 1px;
+}
+.div_section {
+  padding: 5px;
+  box-sizing: border-box;
+}
+.div_section > div {
+  padding: 5px;
+}
+.div_section:nth-child(1) {
+  flex: 1 1 200px;
+  margin-right: 1%;
+}
+.div_section:nth-child(2) {
+  flex: 3 1 200px;
+  border: 1px solid #ddd;
+}
+/* --------------profile---------------- */
+img.proimage1 {
+  width: auto;
+  max-height: 150px;
+  border: 1px solid #ddd;
+  border-radius: 50%;
+  padding: 5px;
+}
+.infor_t2 {
+  font-size: 14px;
+  color: #524125;
+  display: block;
+  text-align: center;
+}
+.infor_image {
+  width: 100%;
+}
+.pro {
+  height: auto;
+  padding: 4px 5px;
+}
+.message {
+  color: #f3a0a3;
+  font-size: 15px;
+  font-weight: normal;
+}
+/* --------------profile---------------- */
+#footer_section {
+  height: auto;
+  width: 100%;
+}
+.txt_t1 {
+  font-size: 18px;
+  color: #524125;
+  font-weight: bold;
+  word-break: break-all;
+}
+.txt_t2 {
+  font-size: 16px;
+  font-weight: bold;
+  color: #524125;
+  word-break: break-all;
+}
+.txt_t3 {
+  font-size: 15px;
+  font-weight: normal;
+  color: #524125;
+  word-break: break-all;
+}
+.txt_t4 {
+  font-size: 14px;
+  font-weight: normal;
+  color: #524125;
+  word-break: break-all;
+}
+hr.line1 {
+  border-top: 1px solid #5f6f81;
+  margin-top: 10px;
+  margin-right: 10px;
+}
+/*---------------------------Pagination--------------------------------*/
+ul.breadcrumb {
+  padding-top: 5px;
+  list-style: none;
+  font-family: "fontAwesome", sans-serif;
+}
+ul.breadcrumb li {
+  display: inline;
+  font-size: 13px;
+  font-weight: bold;
+}
+ul.breadcrumb li + li:before {
+  padding: 5px;
+  color: black;
+  font-weight: bold;
+  content: "/\00a0";
+}
+ul.breadcrumb li a {
+  color: #0275d8;
+  text-decoration: none;
+  font-weight: bold;
+}
+ul.breadcrumb li a:hover {
+  color: #01447e;
+  text-decoration: none;
+}
+/*---------------------------@media--------------------------------*/
+@media (max-width: 768px) {
+  #body_section {
+    flex-wrap: wrap;
+  }
+  .div_section:nth-child(1) {
+    flex: 1 0 100%;
+    margin-right: 0;
+  }
+  .div_section:nth-child(2) {
+    flex: 1 0 100%;
+  }
+}

@@ -1,0 +1,256 @@
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.2); /* Semi-transparent black */
+  z-index: 999; /* Ensure it sits below the popup */
+  display: none; /* Initially hidden */
+}
+
+.page_title {
+  padding: 20px;
+  background: #f3f7f4;
+  color: black;
+  font-size: 30px;
+  border: 1px solid #c4c4c4;
+  margin-bottom: 10px;
+}
+
+.page_name {
+  font-size: 20px;
+}
+
+p {
+  font-size: 30px;
+}
+
+.page_subtitle {
+  padding: 10px 10px 10px 20px;
+  background: #f3f7f4;
+  color: black;
+  border: 1px solid #c4c4c4;
+}
+
+.title {
+  font-size: 15px;
+}
+
+/*--------------------------- Add complain -----------------------*/
+.add-complain-form {
+  position: relative;
+  background: #ffffff;
+  min-height: 550px;
+  padding: 10px;
+  display: inline-block;
+  border-radius: 0 0 10px 10px ;
+  border: 1px solid #C4C4C4;
+}
+
+.div_section .add-complain-form-card {
+  background-color: #f2f2f2;
+  width: 100%;
+  padding: 20px;
+  border: #333 solid 1px;
+  border-radius: 10px;
+}
+
+input[type="text"],
+select,
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: none;
+}
+
+label {
+  padding: 12px 12px 12px 0;
+}
+
+input[type="cancel"] {
+  width: 5%;
+  font-size: 15px;
+  background-color: #a90329;
+  color: white;
+  margin-top: 50px;
+  text-align: center;
+  padding: 15px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  float: right;
+  text-decoration: none;
+  font-weight: bold;
+  border: 1px solid #900323;
+}
+
+input[type="cancel"]:hover {
+  background-color: #a9032abd;
+}
+
+input[type="submit"] {
+  font-size: 15px;
+  background-color: #24A0ED;
+  color: white;
+  margin-top: 50px;
+  margin-left: 10px;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  float: right;
+  text-decoration: none;
+  font-weight: bold;
+  border: 1px solid #45a7ba;
+}
+
+input[type="submit"]:hover {
+  background-color: #99cbfc;
+}
+
+.col-25 {
+  float: left;
+  width: 15%;
+  margin-top: 10px;
+  text-align: left;
+  margin-left: 80px;
+}
+
+.col-75 {
+  float: left;
+  width: 75%;
+  margin-top: 6px;
+}
+
+.suggestion-box {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  border: 1px solid #ccc;
+  max-height: 150px;
+  overflow-y: auto;
+  display: none; /* Initially hidden */
+  position: absolute;
+  background-color: white;
+  width: 300px; /* Adjust based on your input width */
+  z-index: 1000; /* Ensure it appears above other elements */
+}
+
+.suggestion-box li {
+  padding: 8px;
+  cursor: pointer;
+}
+
+.suggestion-box li:hover {
+  background-color: #f0f0f0;
+}
+
+div.gallery {
+  margin: 5px;
+  border: 1px solid #ccc;
+  float: left;
+  width: 180px;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+/*----------------------- Popup Box -------------------------------*/
+.message-box {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1001; /* Higher z-index to ensure it sits above the overlay */
+}
+.popup{
+  width: 400px;
+  background: #fff;
+  border-radius: 6px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%) scale(0.1);
+  text-align: center;
+  padding: 0 30px 30px;
+  color: #333;
+  visibility: hidden;
+  transition: transform 0.4s, top 0.4s;
+  z-index: 1001;
+}
+
+.open-popup{
+  visibility: visible;
+  top: 50%;
+  transform: translate(-50%, -50%) scale(1);
+  z-index: 1001; /* Higher than the overlay */
+}
+
+.popup img{
+  width: 100px;
+  margin-top: -50px;
+  border-radius: 50%;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+.popup h2{
+  font-size: 38px;
+  font-weight: 500;
+  margin: 30px 0 10px;
+}
+
+.popup p{
+  font-size: medium;
+}
+
+.popup button{
+  width: 100%;
+  margin-top: 50px;
+  padding: 10px 0;
+  background: #6fd649;
+  color: #fff;
+  border: 0;
+  outline: none;
+  font-size: 18px;
+  border-radius: 4px;
+  cursor: pointer;
+  box-shadow: 0 5px 5px rgba(0,0,0,0.2);
+}
+
+.col-75 .comment {
+  margin-top: 2px;
+  font-size: 13px;
+  color: #818181;
+}
+
+#info {
+  color: red;
+  margin-top: 10px;
+}
+
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+
+  .col-25,
+  .col-75,
+  input[type="submit"] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+
+/*---------------------------close add complain -------------------------------*/

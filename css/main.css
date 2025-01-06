@@ -1,0 +1,270 @@
+html, body {
+  min-height: 100vh;
+  font-family: "fontAwesome", sans-serif;
+}
+*{
+  margin: 0px;
+  padding: 0px;
+}
+*:focus {
+  outline: 0px transparent !important;
+}
+@font-face {
+  font-family: "fontAwesome";
+  src: url("../fontawesome/webfonts/fa-regular-400.eot"); /* IE9 Compat Modes */
+  src: url("../fontawesome/webfonts/fa-regular-400.eot?#iefix")
+      format("embedded-opentype"),
+    /* IE6-IE8 */ url("../fontawesome/webfonts/fa-regular-400.woff2")
+      format("woff2"),
+    /* Super Modern Browsers */
+      url("../fontawesome/webfonts/fa-regular-400.woff") format("woff"),
+    /* Pretty Modern Browsers */
+      url("../fontawesome/webfonts/fa-regular-400.ttf") format("truetype"); /* Safari, Android, iOS */
+  /*url('fontawesome/webfonts/webfont.svg#svgFontName') format('svg');*/ /* Legacy iOS */
+}
+/*-------------------------top_bar start-------------------------------------*/
+#top_bar {
+  width: 100%;
+  height: auto;
+}
+#top_bar > #top_barwapper {
+  width: 100%;
+  min-height: 2.5vh;
+  height: auto;
+  padding-top: 0.188rem;
+  padding-bottom: 0.188rem;
+  background-color: #2a3e53;
+  margin: 0px auto;
+  display: flex;
+  flex-direction: row;
+}
+#top_barwapper > * {
+  flex: 1 1 45%;
+  text-align: center;
+  box-sizing: border-box;
+}
+#top_barwapper > * + * {
+  border-left: 0.0625em solid #f8f8f8;
+}
+.toptxt1 {
+  font-size: 0.9rem;
+  font-weight: normal;
+  color: #ffffff;
+}
+.notification {
+  background-color: #6994c0;
+  color: #ffffff;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 0.125em 1.675em;
+  position: relative;
+  display: inline-block;
+  border-radius: 0.125em;
+  font-size: 0.8rem;
+}
+.notification:hover {
+  background: #99cbfc;
+  transition: 0.5s;
+}
+.notification .badge {
+  position: absolute;
+  top: 0.312rem;
+  left: 7.4rem;
+  padding: 0.188em 0.375em;
+  border-radius: 50%;
+  background-color: #f86685;
+  color: white;
+  font-size: 0.7rem;
+}
+.badge {
+  animation: blinkingText 1.2s infinite;
+}
+@keyframes blinkingText {
+  0% {
+    color: #fff;
+  }
+  49% {
+    color: #fff;
+  }
+  60% {
+    color: transparent;
+  }
+  99% {
+    color: transparent;
+  }
+  100% {
+    color: #fff;
+  }
+}
+/*-------------------------top_bar end--------------------------------*/
+/*-------------------------header start--------------------------------*/
+#header {
+  width: 100%;
+  height: auto;
+  background-color: #fefbfb;
+}
+#header_wapper {
+  max-width: 100%;
+  min-height: 7.5vh;
+  height: auto;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  border-bottom:0.0625em solid #ceced1;
+}
+#header_wapper > #toggle_wapper {
+  max-width:50px;
+  flex: 1 1 10%;
+  box-sizing: border-box;
+  display: flex;
+  border-right: #ceced1 solid 1px;
+  justify-content: center;
+  align-items: center;
+  background-color: #eeeeee;
+}
+#header_wapper > #logo {
+  flex: 1 1 45%;
+  box-sizing: border-box;
+  height: auto;
+  padding-left: 0.625em;
+}
+#logo > #logo_wapper {
+  width: 100%;
+  height: 100%;
+}
+#header_wapper > #infor {
+  flex: 1 1 45%;
+  box-sizing: border-box;
+}
+#infor > #Search_bar {
+  flex: 1 0 100px;
+  padding: 5px;
+}
+#infor > #logout_div {
+  flex: 2 0 100px;
+  padding: 0.3125rem;
+  text-align: right;
+}
+#logoimg {
+  width: 3.0825rem;
+  height: 3.0825rem;
+  padding-right: 0.625em;
+  margin-top:0.625em;
+}
+img.avatar {
+  width: auto;
+  margin-right: 0.3125rem;
+  margin-left: 0.625rem;
+  max-height: 2.8125rem;
+  border: 0.0625em solid #ddd;
+  border-radius: 50%;
+  padding: 0.125em;
+}
+#logo_t1 {
+  font-size: 1.5rem;
+  padding-top: 0.5em;
+  color: #47696f;
+  font-weight: normal;
+  text-shadow: 0.125em 0.125em 0.625em #aeaea9;
+}
+#logo_t2 {
+  font-size: 1rem;
+  color: #47696f;
+  font-weight: normal;
+  text-shadow: 0.125em 0.125em 0.625em #aeaea9;
+}
+#login_infort1 {
+  font-size: 0.9rem;
+  color: #4686c5;
+  font-weight: normal;
+  vertical-align: top;
+}
+/*-------------------------header end--------------------------------*/
+/*-------------------------content start--------------------------------*/
+#main_body{
+  background-color: #e8ebf0;
+  width: 100%;
+  box-sizing: border-box;
+  float: left;
+  min-height:86.5vh;
+}
+#main_content{
+display: block;
+width: calc(100%-220px);
+margin-left: 220px;
+height: 100%;
+padding: 10px;
+transition: 0.5s;
+box-sizing: border-box;
+}
+#menu_war{
+  display: block;
+  float: left;
+  width:220px;
+  height:86.5vh;
+  background: #fefbfb;
+  border: 0.0625em solid #ceced1;
+  border-top: none;
+  color: azure;
+  transition: 0.5s;
+  box-sizing: border-box;
+  }
+
+/*-------------------------content end--------------------------------*/
+/*--------------------footer-----------------------------------------*/
+#footer {
+  width: 100%;
+  height: auto;
+  background-color: #2a3e53;
+}
+#footer > #footer_wapper {
+  width: 100%;
+  min-height: 3.5vh;
+  height: auto;
+  display: flex;
+}
+#footer_wapper > #section {
+  flex: 1 1 45%;
+}
+#footer_copwapper a {
+  text-decoration: none;
+  font-size: 0.8125rem;
+  color: #ffffce;
+}
+#footer_links:link {
+  text-decoration: none;
+  color: #f0f0f0;
+  font-weight: bold;
+  font-size: 0.8125rem;
+  font-family: "Font Awesome 5 Brands Regular", sans-serif;
+}
+#footer_links:visited {
+  text-decoration: none;
+  color: #f0f0f0;
+  font-weight: bold;
+  font-size: 0.8125rem;
+  font-family: "Font Awesome 5 Brands Regular", sans-serif;
+}
+#footer_links:hover {
+  text-decoration: none;
+  color: hsl(0, 100%, 75%);
+  font-weight: bold;
+  font-size: 0.8125rem;
+  transition: all 0.5s ease;
+  font-family: "Font Awesome 5 Brands Regular", sans-serif;
+}
+.cop1 {
+  font-weight: bold;
+  font-size: 0.8125rem;
+  color: #ffffdf;
+  padding-top: 5px;
+}
+.fa,
+.far,
+.fas {
+  font-size: 0.875rem;
+  padding-right: 0.3125em;
+}
+/*--------------------footer-----------------------------------------*/
+/*---------------------@media-----------------------------------*/
+/*---------------------@media-----------------------------------*/
